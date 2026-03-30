@@ -44,8 +44,8 @@ void aglMakeCurrent(void* context);
 void aglSwapBuffers();
 void aglSetBitmap(struct BitMap *bitmap);
 void aglSetParams2(struct TagItem * tags);
-void* gl4es_aglGetProcAddress(const char* name);
-#define GETPROCADDRESS gl4es_aglGetProcAddress
+void* aglGetProcAddress(const char* name);
+#define GETPROCADDRESS aglGetProcAddress
 
 static void makeContextCurrentGL(_GLFWwindow* window)
 {
